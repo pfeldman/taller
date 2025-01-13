@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import { isSameDay } from "date-fns"
 
 export interface Transaction {
     id: number
@@ -35,6 +34,7 @@ export const useTransactions = (startDateFilter: string | null, endDateFilter: s
         try {
             const response: Transaction[] = await new Promise((resolve, reject) => {
                 setTimeout(() => {
+                    // uncomment this line to trigger the error
                     // reject('Error loading data')
                     const startFilterDate = startDateFilter ? new Date(startDateFilter) : null
                     startFilterDate?.setHours(0, 0, 0, 0)
