@@ -1,0 +1,35 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 20px;
+}
+
+.table th,td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.right {
+  text-align: right;
+}
+
+.error {
+  background-color: darkred;
+  color: white;
+  padding: 5px;
+  border-color: 1px solid red;
+}
+
+.filters {
+  margin-bottom: 10px;
+  display: flex;
+}
